@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded",function(){
         let current_active = parseInt(button.innerText);
         if(button.innerText !== "Prev" && button.innerText !== "Next")
         {
-            let data_start = (current_active*table_length)-5;
+            let data_start = (current_active*table_length)-table_length;
             DOM_Manipulation(data_start);
         }
                 
